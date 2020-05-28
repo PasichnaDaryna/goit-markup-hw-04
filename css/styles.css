@@ -39,17 +39,16 @@ body {
 
 .container {
   margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid tomato;
-}
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 
-main {
+/* main {
   outline: tomato;
-}
+} */
 
 img {
   display: block; 
@@ -128,7 +127,7 @@ button {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  outline: solid 2px tomato;
+  
   
 
 }
@@ -178,10 +177,22 @@ letter-spacing: 0.02em;
 
 
 /* Page header */
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: 
+  linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)
+  ),
+  
+  url(../img/Headerimg.png);
+  background-repeat: no-repeat;
+}
 .section-hero {
   text-align: center;
-  max-width: 1600px;
-  /* background-image: */
+  
 }
 .hero-title {
     margin-bottom: 56px;
@@ -194,7 +205,6 @@ letter-spacing: 0.02em;
   line-height: 1.36;    
   
   letter-spacing: 0.06em;
-  background-color: var(--main-txt-color);
   color: var(--main-bg-color);
 }
 
