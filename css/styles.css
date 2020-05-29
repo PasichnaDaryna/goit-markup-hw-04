@@ -107,13 +107,20 @@ button {
   
 }
 
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--hover-focus-color);
   font-style: normal;
 }
 
-
+.contact-link::before {
+  display: inline-block;
+  width: 16px;
+  height: 11.2px;
+  content: "";
+  background-image: url(../img/phone.svg);
+}
 
 
 
@@ -286,6 +293,8 @@ ul {
 
  }
 
+ 
+
  .item-image {
   width: calc((100% - 90px) / 4);
   display: block;
@@ -294,10 +303,39 @@ ul {
   margin-right: 30px;
   text-align: center;
   justify-content: center;
+
 }
+
+
 
 .item-image:last-child {
 margin-right: 0;
+}
+
+.item-image::before {
+  display: block;
+  content: "";
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--main-bg-color);
+}
+
+.item-image:nth-child(1):before {
+  background-image: url(../img/antenna1.svg);
+}
+
+.item-image:nth-child(2)::before {
+  background-image: url(../img/clock1.svg);
+}
+
+.item-image:nth-child(3)::before {
+  background-image: url(../img/diagram1.svg);
+}
+
+.item-image:nth-child(4)::before {
+  background-image: url(../img/astronaut1.svg);
 }
 
 .section-title {
