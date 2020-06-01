@@ -114,29 +114,29 @@ button {
   font-style: normal;
 }
 
-.phone-number::before {
+.phone-number {
   display: inline-block;
   width: 10px;
   height: 14px;
   margin-right: 10px;
-  content: "";
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../img/phone.svg);
+
 }
 
-.contact-email::before{
+.phone-number:hover {
+  fill: var(--hover-focus-color);
+}
+
+.contact-email {
   display: inline-block;
   width: 16px;
   height: 11.2px;
   margin-right: 10px;
-  content: "";
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../img/envelope.svg);  
+  fill: var(--main-txt-color);
 
+}
+
+.contact-email:hover {
+fill: var(--hover-focus-color);
 }
 
 
@@ -241,16 +241,11 @@ letter-spacing: 0.02em;
   height: 50px; 
   padding: 10px 32px;
   margin-bottom: 200px;
-  
-    
-
   color: var(--main-bg-color);
   background: var(--hover-focus-color);
-
-    
-    font-size: 16px;
-    line-height: 1.87;
-    font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: bold;
 }
 
 
@@ -407,10 +402,8 @@ margin-right: 0;
   width: calc((100% - 90px) / 3);
   margin-right: 30px;
   background-color: var(--main-bg-color);
-
-
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .member h3 {
@@ -479,8 +472,6 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  
-
   background: #F5F4FA;
   border-radius: 4px;
   border: 1px solid transparent;
@@ -665,9 +656,8 @@ footer {
    font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 2; 
-  
- letter-spacing: 0.03em;
+  line-height: 2;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4); 
   
 }
@@ -687,8 +677,56 @@ footer {
   background-image: url(../img/phone.svg);
 }
 
-}
+
 
 .email-footer {
   background-color: var(--footer-bg-color);
 }
+
+/* .social-networks {
+  fill: #FFFFFF;} */
+
+  
+
+.instagram {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+
+.instagram:hover,
+.instagram:focus {
+  fill: var(--hover-focus-color);
+}
+
+
+.logo-first {
+  width: 170px;
+  height: 90px;
+  fill: #AFB1B8;;
+}
+
+/* .logo-second {
+  width: 170px;
+  height: 90px;
+}
+
+.logo-third{
+  width: 170px;
+  height: 90px;
+}
+
+.logo-fourth {
+  width: 170px;
+  height: 90px;
+}
+
+.logo-fifth {
+  width: 170px;
+  height: 90px;
+}
+
+.logo-six {
+  width: 170px;
+  height: 90px;
+} */
