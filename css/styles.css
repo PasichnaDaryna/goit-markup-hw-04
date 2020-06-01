@@ -640,9 +640,7 @@ footer {
   color: var(--hover-focus-color);
 }
 
-.social-option:hover {
-  background-color: var(--h123-link-color);
-}
+
 
 .studio-white {
   color: var(--main-bg-color);
