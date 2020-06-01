@@ -114,12 +114,29 @@ button {
   font-style: normal;
 }
 
-.contact-link::before {
+.phone-number::before {
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  margin-right: 10px;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/phone.svg);
+}
+
+.contact-email::before{
   display: inline-block;
   width: 16px;
   height: 11.2px;
+  margin-right: 10px;
   content: "";
-  background-image: url(../img/phone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/envelope.svg);  
+
 }
 
 
@@ -518,6 +535,7 @@ h3 {
   text-align: center;
   padding-top: 35px;
   margin: 0px;
+  
 }
 
 
@@ -660,7 +678,16 @@ footer {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.submit::after {
+  display: inline-block;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/phone.svg);
+}
 
+}
 
 .email-footer {
   background-color: var(--footer-bg-color);
