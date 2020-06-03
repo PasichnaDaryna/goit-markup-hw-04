@@ -57,8 +57,7 @@ img {
 }
 a {
   display: block;
-}
-button {
+  cursor: pointer;
   margin: 0;
 }
 
@@ -76,6 +75,11 @@ button {
   margin-bottom: 25px;
 }
 /* main nav */
+.header-content {
+  display: flex;
+  
+}
+
 
  .main-nav {
   display: flex;
@@ -88,12 +92,17 @@ button {
 }
 
 .contacts {
-  display: flex;
-  list-style: none;
+  display: inline-flex;
   margin-left: auto;
+  align-items: center;
+    
   
 }
-
+.break {
+   padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
 .contact-link {
   display: block;
 
@@ -122,22 +131,24 @@ button {
 
 }
 
-.phone-number:hover {
+.contact-link:hover .contact-email {
   fill: var(--hover-focus-color);
 }
 
 .contact-email {
   display: inline-block;
   width: 16px;
-  height: 11.2px;
+  height: 11px;
   margin-right: 10px;
   fill: var(--main-txt-color);
 
 }
 
-.contact-email:hover {
-fill: var(--hover-focus-color);
+.contact-link:hover .phone-number {
+  fill: var(--hover-focus-color);
 }
+
+
 
 
 
@@ -213,19 +224,20 @@ letter-spacing: 0.02em;
   
   url(../img/Headerimg.png);
   background-repeat: no-repeat;
+  background-position: center;
+background-size: cover;
 }
 .section-hero {
   text-align: center;
   
 }
 .hero-title {
-    margin-bottom: 56px;
-    padding-top: 200px;
+  margin-bottom: 56px;
+  padding-top: 200px;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;    
-  
+  line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--main-bg-color);
 }
@@ -238,7 +250,6 @@ letter-spacing: 0.02em;
   width: 200px; 
   height: 50px; 
   padding: 10px 32px;
-  margin-bottom: 200px;
   color: var(--main-bg-color);
   background: var(--hover-focus-color);
   font-size: 16px;
@@ -293,6 +304,8 @@ ul {
 .item-nav:last-child {
   margin-right: 0;
 }
+
+
 
 .list-images {
   display: flex;
@@ -422,12 +435,23 @@ margin-right: 0;
   justify-content: center;
   margin-bottom: 24px;
 }
-.social-list li {
-  margin-right: 23px;
-}
+
 .social-list:last-child {
   margin-right: 0px;
 }
+
+  .social-list .social-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-item:hover,
+.social-item:focus 
+{ fill: var(--main-bg-color);
+  background-color: var(--hover-focus-color);
+  border-radius: 44px;
+
+}
+
+
 
 .client-list {
   display: flex;
@@ -437,6 +461,7 @@ margin-right: 0;
 
 .client-item {
   margin-right: 30px;
+  width: calc((100% - 150px) / 6);
 }
 
 .client-item:last-child {
@@ -464,6 +489,13 @@ h3 {
   margin-right: 8px;
 }
 
+.filter-item:hover {
+
+  background-color: var(--hover-focus-color);
+  
+  
+  }
+
 .filter-button {
   font-family: Roboto;
   font-style: normal;
@@ -476,7 +508,11 @@ h3 {
   padding: 6px 22px;
  
 }
-
+.filter-button:hover,
+.filter-button:focus{
+  color: var(--main-bg-color);
+  background-color: var(--hover-focus-color);
+}
 
 
 .address {
@@ -600,7 +636,9 @@ h3 {
   padding-right: 24px;
 }
 
-
+.portfolio-item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 
 .port-text {
   padding-right: 24px;
@@ -679,12 +717,36 @@ footer {
   background-color: var(--footer-bg-color);
 }
 
+.footer-item {
+  fill: var(--main-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 44px;
+
+}
+
+.footer-item:hover,
+.footer-item:focus {
+  background-color: var(--hover-focus-color);
+  border-radius: 44px;
+}
+
+.social-list .footer-item:not(:last-child) {
+  margin-right: 10px;
+}
 /* .social-networks {
   fill: #FFFFFF;} */
 
   
-
-.instagram {
+.social-option{
+  width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* .instagram {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
@@ -693,13 +755,27 @@ footer {
 .instagram:hover,
 .instagram:focus {
   fill: var(--hover-focus-color);
+} */
+.social-item {
+  fill: #AFB1B8;
 }
-
-
 .logo-first {
-  width: 170px;
+  min-width: 170px;
   height: 90px;
-  fill: #AFB1B8;;
+  fill: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.logo-first:hover, 
+.logo-first:focus {
+
+fill: var(--hover-focus-color);
+border: var(--hover-focus-color);
+border: 1px solid var(--hover-focus-color);
 }
 
 /* .logo-second {
