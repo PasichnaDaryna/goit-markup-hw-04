@@ -82,16 +82,24 @@
               
                 <ul class="list-images">
                   <li class="item-image icon-antenna">
-                    <!-- <img src="./img/antenna.svg" alt="attentiveness" /> -->
+                    
+                   <div class="plus">
+                    <svg width="66 " height="70">
+                      <use href="./img/symbol-defs.svg#icon-antenna1"></use>
+                   </svg>
+                   </div>
                     <h3 class="section-title">Внимание к деталям</h3>
                     <p class="text-section">
-                      Идейные соображения, а также начало 
-                      повседневной работы по
-                      формированию позиции.
+                      Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                   </li>
-                  <li class="item-image ">
-                    <!-- <img src="./img/punctuality.svg" alt="punctuality" /> -->
+                  <li class="item-image">
+                    <div class="plus">
+                      <svg width="66 " height="70">
+                        <use href="./img/symbol-defs.svg#icon-clock1"></use>
+                     </svg>
+                    </div>
+
                     <h3 class="section-title">Пунктуальность</h3>
                     <p  class="text-section">
                       Задача организации, в особенности же <br />
@@ -100,7 +108,11 @@
                     </p>
                   </li>
                   <li class="item-image">
-                    <!-- <img src="./img/planning.svg" alt="planning" /> -->
+                    <div class="plus">
+                      <svg width="77" height="54">
+                      <use href="./img/symbol-defs.svg#icon-diagram1"></use>
+                      </svg>
+                    </div>
                     <h3 class="section-title">Планирование</h3>
                     <p class="text-section">
                       Равным образом консультация с <br />
@@ -109,11 +121,15 @@
                     </p>
                   </li>
                   <li class="item-image">
-                    <!-- <img src="./img/ST.svg" alt="modern technologies" /> -->
+                  <div class="plus"> 
+                    <svg width="77" height="54">
+                    <use href="./img/symbol-defs.svg#icon-astronaut1"></use>
+                    </svg>
+                </div>
                     <h3 class="section-title">Современные технологии</h3>
                     <p class="text-section">
-                      Значимость этих проблем настолько <br />
-                      очевидна, что реализация плановых <br />
+                      Значимость этих проблем настолько 
+                      очевидна, что реализация плановых 
                       заданий.
                     </p>
                   </li>
@@ -163,7 +179,7 @@
             <ul class="team-list">
               <li class="member">
                 <img src="./img/chel1.jpg" alt="photo1" />
-                <h3>John Smith</h3>
+                <h3 class="member-name">John Smith</h3>
                 <p>Product Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -202,7 +218,7 @@
               </li>
               <li  class="member">
                 <img src="./img/chel-2.jpg" alt="photo2" />
-                <h3>Marta Stewart</h3>
+                <h3 class="member-name">Marta Stewart</h3>
                 <p>Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -241,7 +257,7 @@
               </li>
               <li  class="member">
                 <img src="./img/chel3.jpg" alt="photo3" />
-                <h3>Robert Jakis</h3>
+                <h3 class="member-name">Robert Jakis</h3>
                 <p>Marketing</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -280,7 +296,7 @@
               </li>
               <li  class="member">
                 <img src="./img/chel-4.jpg" alt="photo4" />
-                <h3>Martin Doe</h3>
+                <h3 class="member-name">Martin Doe</h3>
                 <p>UI Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -435,11 +451,21 @@
       <div class="footer-subscribe">
         <b class="join">Подпишитесь на рассылку</b>
         <br />
-        <input class="email-footer" type="email" placeholder="E-mail" />
-        <input class="submit" type="submit" value="Подписаться"/>
+        <div class="join-form">
+          <input class="email-footer" type="email" placeholder="E-mail" />
+        <button class="button-join">          
+          Подписаться
+          <svg width="24" height="24">
+            <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+        </div>
       </div>
-      
-      <!-- <p class="copyright">2020 | Developed by GoIT Students</p> -->
+     </div>
+
+     <div class="copyright-div">
+      <p class="line"></p>
+      <p class="copyright">2020 | Developed by GoIT Students</p>
      </div>
    
  
