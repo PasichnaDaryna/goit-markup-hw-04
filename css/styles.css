@@ -746,15 +746,19 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-svg{
+  fill: var(--main-bg-color)
 }
 
 .line {
   border: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 18px;
 }
-}
+
 
 .footer-item:hover {
   background-color: var(--hover-focus-color);
@@ -779,12 +783,23 @@ footer {
 }
 
 .social-option:hover {
+  fill: var(--main-bg-color);
   background-color: var(--hover-focus-color);
 }
 
 .social-item {
   fill: #AFB1B8;
 }
+
+.icon-social {
+fill: #AFB1B8;
+
+
+}
+.icon-social:hover {
+fill: var(--main-bg-color)
+}
+
 .logo-first {
   min-width: 170px;
   height: 90px;
