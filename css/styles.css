@@ -132,7 +132,7 @@ a {
 }
 
 .contact-link:hover .contact-email {
-  fill: var(--hover-focus-color);
+  --color4: var(--hover-focus-color);
 }
 
 .contact-email {
@@ -145,7 +145,7 @@ a {
 }
 
 .contact-link:hover .phone-number {
-  fill: var(--hover-focus-color);
+  --color4: var(--hover-focus-color);
 }
 
 
@@ -751,7 +751,7 @@ footer {
 }
 
 .footer-svg{
-  fill: var(--main-bg-color)
+  --color5: #FFFFFF;
 }
 
 .line {
@@ -782,23 +782,29 @@ footer {
     cursor: pointer;
 }
 
-.social-option:hover {
-  fill: var(--main-bg-color);
+ .social-option:hover {
+  color: var(--main-bg-color);
   background-color: var(--hover-focus-color);
 }
 
-.social-item {
-  fill: #AFB1B8;
+
+.social-option .icon-social {
+  --color5: #AFB1B8;
 }
 
-.icon-social {
-fill: #AFB1B8;
+.social-option:hover .icon-social{
+  --color5: #ffffff; 
+}
+
+.company-logo {
+  --color5: #AFB1B8;
 
 
 }
-.icon-social:hover {
-fill: var(--main-bg-color)
-}
+.company-logo:hover {
+--color5: var(--hover-focus-color);
+
+} 
 
 .logo-first {
   min-width: 170px;
