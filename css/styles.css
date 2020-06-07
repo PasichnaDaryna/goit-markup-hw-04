@@ -350,6 +350,10 @@ align-items: center;
 justify-content: center;
 }
 
+.advantage-icon:hover {
+  --color2: #2196f3;
+  --color3: #2196f3;
+}
 
 .section-title {
   text-align: center;
