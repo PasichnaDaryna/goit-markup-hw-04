@@ -843,7 +843,7 @@ footer {
 }
 
  .client-item:hover  {
-  --color5: var(--hover-focus-color);
+ fill: var(--hover-focus-color);
  border: 1px solid  var(--hover-focus-color);
 
 }
