@@ -352,12 +352,13 @@ justify-content: center;
 .advantage-icon:hover {
   --color2: #2196f3;
   --color3: #2196f3;
+  cursor: pointer;
 }
 
 .section-title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
-  margin-top: 30px;
+  
 }
 
 .text-section {
@@ -511,6 +512,7 @@ h3 {
   background-color: var(--hover-focus-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 border-radius: 4px;
+cursor: pointer;
 }
 
 
@@ -826,10 +828,15 @@ footer {
 
 
 }
-.company-logo:hover {
+.logo-first:hover .company-logo{
 --color5: var(--hover-focus-color);
+cursor: pointer;
 
 } 
+
+.client-item:hover {
+  border: 1px solid  var(--hover-focus-color);
+}
 
 .logo-first {
   min-width: 170px;
@@ -842,11 +849,15 @@ footer {
   cursor: pointer;
 }
 
- .client-item:hover  {
- fill: var(--hover-focus-color);
+/* .client-list. .logo-first:hover  {
+ 
  border: 1px solid  var(--hover-focus-color);
-
+ --color5 : var(--hover-focus-color);
 }
+.client-item svg {
+
+  fill: var(--hover-focus-color);
+} */
 
 
 /* .logo-second {
