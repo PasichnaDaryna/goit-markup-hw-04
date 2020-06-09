@@ -552,9 +552,13 @@ cursor: pointer;
     font-size: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 12px 62px 12px 29px;
+    padding: 10px 62px 10px 29px;
     border: 1px solid transparent;
     display: inline-block;
+}
+
+.button-join svg{
+  margin-left: 10px;
 }
 
 .portfolio:hover,
@@ -761,6 +765,7 @@ footer {
     margin-right: 12px;
     padding: 12px 18px;
     display: block;
+    width: 358px;
 }
 
 .footer-item {
